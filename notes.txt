@@ -1,8 +1,3 @@
--------------target for 10july2024
+-------------target for 12july2024
 
-recursion | 9-|
-hashing   | |
-sorting   | |
-LEETCODE  | --6|
 
-machine learning maths ||  7- ||
