@@ -4,7 +4,7 @@ using namespace std;
 
 int partition(vector<int> &arr, int low, int high){
 
-    int pivot = arr[0];
+    int pivot = arr[low];
     int i = low;
     int j = high;
 
@@ -13,7 +13,7 @@ int partition(vector<int> &arr, int low, int high){
         {
             i++;
         }
-        while (arr[j]>=pivot && j>=low+1)
+        while (arr[j]>pivot && j>=low+1)
         {
             j--;
         }
@@ -40,7 +40,7 @@ vector<int> quickSort(vector<int> arr){
 }
 
 int main(){
-    vector<int> arr = {4, 6, 2, 5, 7, 9, 1, 3};
+    vector<int> arr = {4,1, 3, 9, 7};
     int n = arr.size();
     cout << "Before Using quick Sort: " << endl;
     for (int i = 0; i < n; i++)
